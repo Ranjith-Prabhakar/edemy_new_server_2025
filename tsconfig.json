@@ -123,17 +123,35 @@
 //   }
 // }
 
+// {
+//   "compilerOptions": {
+//     "target": "ESNext",
+//     "module": "CommonJS", // Change to CommonJS
+//     "moduleResolution": "node",
+//     "esModuleInterop": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "strict": true,
+//     "skipLibCheck": true,
+//     "outDir": "./dist",
+//     "sourceMap": true,
+//     "declaration": true
+//   }
+// }
+
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "CommonJS", // Change to CommonJS
+    "module": "CommonJS",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "outDir": "./dist",
+    "outDir": "./dist",          // Output goes here
+    "rootDir": "./src",          // Input comes from here
     "sourceMap": true,
     "declaration": true
-  }
+  },
+  "include": ["src"]
 }
+
