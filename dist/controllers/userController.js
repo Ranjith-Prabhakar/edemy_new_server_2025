@@ -112,7 +112,7 @@ class UserController {
                 httpOnly: true,
                 sameSite: process.env.NODE_ENV === "production" ? "none" : "strict",
                 domain: process.env.NODE_ENV === "production"
-                    ? ".digi-world.online"
+                    ? ".edemy.shop"
                     : undefined,
                 path: "/",
                 secure: true,
